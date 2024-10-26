@@ -24,8 +24,6 @@ p {
 }
 .content-left {
     margin-right: 70px;
-    width: 700px;
-    height: 860px;
     background-color: goldenrod;
     border-radius: 30px;
     border: 5px solid black;

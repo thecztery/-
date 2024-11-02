@@ -1,5 +1,5 @@
 body {
-    background-color: yellowgreen; padding: 20px; font-size:larger;
+    background-color: rgb(210, 180, 140); padding: 20px; font-size:larger;
     padding: 30px;
 }
 h1 {
@@ -45,11 +45,11 @@ p {
 }
 .header{
     text-align: center;
-    background-color: aquamarine;
+    background-color: cornsilk;
     padding: 30px;
-    width: 550px;
+    width: 650px;
     display: block;
-    margin-left: 650px;
+    margin-left: auto;
 }
 .container{
     background-color: blanchedalmond;

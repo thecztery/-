@@ -1,0 +1,32 @@
+table, th, td {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    padding: 25px;
+}
+table{
+    font-size: 20px;
+    margin-top: 50px;
+}
+th {
+    text-align: left;
+    background-color:cornsilk;
+}
+td {
+    text-align: center;
+}
+caption {
+    font-size: 40px;
+    padding: 30px;
+}
+table {
+    width: 100%;
+}
+tr:nth-child(3n+1) {
+    background-color: rgb(230, 230, 250);
+}
+tr:nth-child(3n+2) {
+    background-color: rgb(152, 255, 152);
+}
+tr:nth-child(3n+3) {
+    background-color:rgb(255, 182, 193);
+}

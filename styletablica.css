@@ -30,3 +30,14 @@ tr:nth-child(3n+2) {
 tr:nth-child(3n+3) {
     background-color:rgb(255, 182, 193);
 }
+form, p{
+    font-size: 30px;
+    text-align: center;
+}
+input {
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(25, 182, 193);
+}

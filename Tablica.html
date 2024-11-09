@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="styletablica.css" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <div class="header">
@@ -68,5 +69,43 @@
                 <td>8/10</td>
             </tr>
         </table>
+        
+        <form id="addform">   
+            <fieldset>   
+                <legend>Добавление нового фильма:</legend>   
+                <label>Номер:</label>   
+                <input type="text" name="number" required><br>   
+                <label>Название фильма:</label>   
+                <input type="text" name="namefilm" required><br>   
+                <label>Жанр:</label>   
+                <input type="text" name="genre" required><br>
+                <label>Оценка</label>
+                <input type="text" name="rate" required><br>
+                <input type="submit" value="Добавить" class="button">
+            </fieldset>   
+        </form>   
+     
+         
+        <script>   
+            function addRecord(form) {  
+            const table = document.querySelector("table");  
+            const newRow = table.insertRow(-1);  
+              
+            const number = form.number.value;  
+            const namefilm = form.namefilm.value;  
+            const genre = form.genre.value;  
+            const rate = form.rate.value;  
+            newRow.insertCell(0).innerText = number;  
+            newRow.insertCell(1).innerText = namefilm;  
+            newRow.insertCell(2).innerText = genre;  
+            newRow.insertCell(3).innerText = rate;  
+            form.reset();  
+        }  
+     
+        document.getElementById("addform").addEventListener("submit", function (e) {     
+            e.preventDefault();     
+            addRecord(e.target);     
+        });     
+        </script>
     </body>
 </html>
